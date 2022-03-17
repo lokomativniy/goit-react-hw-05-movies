@@ -1,0 +1,27 @@
+.overlay {
+  display: flex;
+}
+
+.description {
+  margin-left: 20px;
+}
+
+.listGenres {
+  display: flex;
+}
+
+.listGenres :not(:last-child) {
+  margin-right: 10px;
+}
+
+.title {
+  margin-top: 10px;
+}
+.heroTitle {
+  display: inline-block;
+}
+.date {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}

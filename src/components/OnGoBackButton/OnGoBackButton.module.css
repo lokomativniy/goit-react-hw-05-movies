@@ -1,0 +1,26 @@
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  color: #000;
+  border: solid 2px teal;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  width: 80px;
+}
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  background-color: teal;
+  color: #fff;
+}
