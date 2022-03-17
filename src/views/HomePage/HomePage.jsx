@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as api from '../../services/movies-api';
 import MovieList from '../../components/MovieList/MovieList';
+import s from './HomePage.module.css'
 
 export default function HomePage() {
   const [movies, setMovies] = useState(null);
@@ -9,7 +10,7 @@ export default function HomePage() {
   }, []);
   return (
     <>
-      <h1>Trending today</h1>
+      <h1 className={s.title}>Trending today</h1>
       {movies && <MovieList movies={movies} />}
     </>
   );

@@ -17,19 +17,19 @@ export default function Cast() {
         <>
           <h2 className={s.title}>Cast</h2>
           <ul className={s.actorsList}>
-            {cast.map(actor => (
-              <li key={actor.id}>
+            {cast.map(({ id, profile_path, name, character }) => (
+              <li key={id}>
                 <img
                   src={
-                    actor.profile_path
-                      ? `https://image.tmdb.org/t/p/w300${actor.profile_path}`
+                    profile_path
+                      ? `https://image.tmdb.org/t/p/w300${profile_path}`
                       : 'http://dummyimage.com/250x375/99cccc.jpeg&text=No photo'
                   }
-                  alt={actor.name}
+                  alt={name}
                   width="250"
                 />
-                <p className={s.name}>{actor.name}</p>
-                <p>{actor.character}</p>
+                <p className={s.name}>{name}</p>
+                <p>{character}</p>
               </li>
             ))}
           </ul>

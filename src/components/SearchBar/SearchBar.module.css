@@ -1,22 +1,20 @@
 .Searchbar {
-  top: 0;
-  left: 0;
   position: sticky;
   z-index: 1100;
   display: flex;
   align-items: center;
   min-height: 60px;
-  padding-right: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
   color: #fff;
 }
 
 .SearchForm {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   padding-left: 10px;
   background-color: #fff;
   border-radius: 5px;

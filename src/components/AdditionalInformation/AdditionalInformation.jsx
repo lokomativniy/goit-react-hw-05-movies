@@ -6,14 +6,14 @@ const setActiveLink = ({ isActive }) => (isActive ? s.activeLink : s.link);
 export default function AdditionalInformation() {
   const location = useLocation();
   return (
-    <div>
+    <div className={s.wrap}>
       <ul className={s.list}>
-        <li>
+        <li className={s.item}>
           <NavLink to={`cast`} state={location.state} className={setActiveLink}>
             Cast
           </NavLink>
         </li>
-        <li>
+        <li className={s.itemR}>
           <NavLink
             to={`reviews`}
             state={location.state}

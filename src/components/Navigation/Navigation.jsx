@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const setActiveLink = ({ isActive }) => (isActive ? s.activeLink : s.link);
 const Navigation = () => (
   <>
-    <nav>
+    <nav className={s.nav}>
       <NavLink to="/" className={setActiveLink}>
         Home
       </NavLink>
